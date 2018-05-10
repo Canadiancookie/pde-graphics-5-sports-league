@@ -6,6 +6,11 @@
  * 
  */
  
+  //fonts part1
+  PFont Normal;
+  PFont Header;
+  String[] fontList = PFont.list();
+  
 void setup() {
   
   //team strings
@@ -93,6 +98,13 @@ void setup() {
   print("\t");
   print(team3points);
   
+  //for void draw
+  size(500,700); //canvas size
+  background(255,76,0); //background color (rgb)
+  
+  //fonts part2
+  Normal = createFont("DejaVu Sans Condensed", 10);
+  Header = createFont("DejaVu Sans Bold", 20);
 }
 
 void draw() {
