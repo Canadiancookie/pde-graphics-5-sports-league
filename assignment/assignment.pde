@@ -99,7 +99,7 @@ void setup() {
   print(team3points);
   
   //for void draw
-  size(500,700); //canvas size
+  size(1000,500); //canvas size
   background(255,76,0); //background color (rgb)
   
   //fonts part2
@@ -108,5 +108,13 @@ void setup() {
 }
 
 void draw() {
-  
+  //"for" statements to draw 8 rectangles
+  for(int x=0; x<4; x++) {
+    for(int y=0; y<4; y++) {
+      fill(255,255,255);
+      stroke(0,0,0);
+      strokeWeight(2);
+      rect(250*x,125*y,250,125);
+    }
+  }
 }
