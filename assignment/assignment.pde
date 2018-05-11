@@ -108,7 +108,7 @@ void setup() {
 }
 
 void draw() {
-  //"for" statements to draw 8 rectangles
+  //"for" statements to draw 16 rectangles
   for(int x=0; x<4; x++) {
     for(int y=0; y<4; y++) {
       fill(255,255,255);
@@ -117,4 +117,15 @@ void draw() {
       rect(250*x,125*y,250,125);
     }
   }
+  
+  textAlign(CENTER); //align text to center
+  
+  //text of first row
+  fill(0,0,0);
+  textFont(Header);
+  textSize(40);
+  text("Team", width=125, height=80);
+  text("Wins", width=375, height=80);
+  text("Losses", width=625, height=80);
+  text("Points", width=875, height=80);
 }
