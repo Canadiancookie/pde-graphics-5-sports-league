@@ -160,4 +160,10 @@ void draw() {
   text("4", 625, 325);
   text("2", 625, 450); 
   
+  //team points
+  textFont(Normal);
+  textSize(40);
+  text("18", 875, 200);
+  text("14", 875, 325);
+  text("28", 875, 450); 
 }
