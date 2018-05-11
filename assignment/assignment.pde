@@ -153,4 +153,11 @@ void draw() {
   text("7", 375, 325);
   text("14", 375, 450); 
   
+  //team losses
+  textFont(Normal);
+  textSize(40);
+  text("13", 625, 200);
+  text("4", 625, 325);
+  text("2", 625, 450); 
+  
 }
