@@ -130,7 +130,7 @@ void draw() {
   }
   
   textAlign(CENTER); //align text to center
-  imageMode(CENTER);
+  imageMode(CENTER); //change image mode CORNER to CENTER
   
   //text of first row
   fill(0,0,0);
@@ -145,5 +145,12 @@ void draw() {
   image(Oilers, 125, 185, 115, 115);
   image(Leafs, 125, 315, 115, 115);
   image(Canucks, 125, 440, 115, 115);
+  
+  //team wins
+  textFont(Normal);
+  textSize(40);
+  text("9", 375, 200);
+  text("7", 375, 325);
+  text("14", 375, 450); 
   
 }
