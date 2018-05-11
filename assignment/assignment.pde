@@ -11,6 +11,11 @@
   PFont Header;
   String[] fontList = PFont.list();
   
+  //images part1
+  PImage Oilers;
+  PImage Leafs;
+  PImage Canucks;
+  
 void setup() {
   
   //team strings
@@ -105,6 +110,12 @@ void setup() {
   //fonts part2
   Normal = createFont("DejaVu Sans Condensed", 10);
   Header = createFont("DejaVu Sans Bold", 20);
+  
+  //images part2
+  Oilers = loadImage("oilers.png");
+  Leafs = loadImage("leafs.png");
+  Canucks = loadImage("canucks.png");
+  
 }
 
 void draw() {
@@ -119,6 +130,7 @@ void draw() {
   }
   
   textAlign(CENTER); //align text to center
+  imageMode(CENTER);
   
   //text of first row
   fill(0,0,0);
@@ -128,4 +140,10 @@ void draw() {
   text("Wins", width=375, height=80);
   text("Losses", width=625, height=80);
   text("Points", width=875, height=80);
+  
+  //teams
+  image(Oilers, 125, 185, 115, 115);
+  image(Leafs, 125, 315, 115, 115);
+  image(Canucks, 125, 440, 115, 115);
+  
 }
